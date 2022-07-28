@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Dancing+Script:wght@400;700&family=Open+Sans:wght@400;700&family=Poppins:wght@100;200;300;600&family=Roboto+Mono&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Barbearia 4 rodas</title>
+</head>
+<body>
+    <header class="topo">
+        <nav class="caixa">
+            <img src="./assets/imagens/Logo redimensionada.png" alt="">
+            <ul class="menu escondido">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Galeria</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+            <ion-icon onclick="abrirMenu()" class="ocao-menu menu-hamburguer" name="menu-outline"></ion-icon>
+            <ion-icon onclick="fecharMenu()" class="ocao-menu menu-fechar escondido" name="close-outline"></ion-icon>
+        </nav>
+    </header>
+    <main id="container">
+        <section id="home">
+            <img src="./assets/imagens/background.png" alt="">
+        </section>
+        <section id="sobre">
+            <h2>Sobre nós</h2>
+            <div class="box-sobre">
+                <img src="./assets/imagens/fotos/BarbeiroOrigins.png" alt="">
+                <div class="box-texto">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis exercitationem expedita delectus neque odio quod ex aspernatur nesciunt, nisi voluptatem, animi perspiciatis? Suscipit laboriosam praesentium, nam quae quisquam illo ab.</p>
+                </div>
+            </div>
+        </section>
+        <section class="bg">
+            <secttion id="servicos">
+                <h2 class="services">Serviços</h2>
+                <div class="box-servicos">
+                    <div class="card">
+                        <ion-icon class="icon-services services" name="beer-outline"></ion-icon>
+                        <div class="texto-servico services">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi voluptatibus ex earum ipsam illo aliquam, veniam fuga sunt, quibusdam porro sequi ea. Esse facilis obcaecati natus. Corporis, et placeat. Quidem.</div>
+                    </div>
+                    <div class="card">
+                        <ion-icon class="icon-services services" name="hourglass-outline"></ion-icon>
+                        <div class="texto-servico services">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi voluptatibus ex earum ipsam illo aliquam, veniam fuga sunt, quibusdam porro sequi ea. Esse facilis obcaecati natus. Corporis, et placeat. Quidem.</div>
+                    </div>
+                    <div class="card">
+                        <ion-icon class="icon-services services" name="globe-outline"></ion-icon>
+                        <div class="texto-servico services">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi voluptatibus ex earum ipsam illo aliquam, veniam fuga sunt, quibusdam porro sequi ea. Esse facilis obcaecati natus. Corporis, et placeat. Quidem.</div>
+                    </div>
+                </div>
+            </secttion>
+            <section id="galeria">
+                <h2 class="services">Galeria</h2>
+                <div class="box-galeria">
+                    <img src="./assets/imagens/fotos/WhatsApp Image 2022-01-13 at 12.23.52 PM.jpeg" alt="">
+                    <img src="./assets/imagens/fotos/WhatsApp Image 2022-01-13 at 12.23.53 PM (1).jpeg" alt="">
+                    <img src="./assets/imagens/fotos/WhatsApp Image 2022-01-13 at 12.23.53 PM.jpeg" alt="">
+                    <img src="./assets/imagens/fotos/WhatsApp Image 2022-01-13 at 12.24.06 PM.jpeg" alt="">
+                </div>
+            </section>
+            <section id="mapa">
+                <h2 class="services">Como chegar</h2>
+                <div class="box-mapa">
+                    <iframe id="l-mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.8833553168524!2d-43.42366908556118!3d-22.880766942694187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9961e1fbc95555%3A0x20b164fe6078732d!2sR.%20Piraquara%2C%20303%20-%20Loja%207%20-%20Realengo%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2021750-400!5e0!3m2!1spt-BR!2sbr!4v1659021931208!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="endereco services">R. Piraquara, 303 - Realengo, Rio de Janeiro - RJ, 21750-400</div>
+                </div>
+            </section>
+            <section id="video">
+                <h2 class="services">Nosso espaço</h2>
+                <iframe id="l-video" width="560" height="315" src="https://www.youtube.com/embed/PQVoH7LqfZ0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </section>
+        </section>
+    </main>
+    <footer id="footer">
+        <div class="box-footer">
+            <img src="./assets/imagens/Logo redimensionada.png" alt="">
+            <div class="titulo-footer services">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex autem in vitae alias nihil nemo eligendi quasi illo at. Fugit voluptatibus atque sed et distinctio placeat dolorum nihil molestiae amet.</div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="./assets/js/app.js"></script>
+</body>
+</html>
